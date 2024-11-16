@@ -1,0 +1,29 @@
+<div id="generate-section" style="text-align: center; margin-top: 20px;">
+    <!-- Input field for sticker description -->
+    <input
+        type="text"
+        id="description"
+        placeholder="Enter description for your cat sticker"
+        style="padding: 12px; width: 300px; font-size: 1rem; border-radius: 8px; border: 1px solid #ccc; margin-bottom: 10px;"
+    />
+    <!-- Button to generate the image -->
+    <button
+        id="generate-button"
+        style="padding: 12px 20px; font-size: 1rem; border-radius: 8px; background-color: #007bff; color: white; border: none; cursor: pointer; margin-left: 10px;"
+    >
+        Generate Image
+    </button>
+    <!-- Area to display feedback messages -->
+    <div id="feedback-message" style="margin-top: 20px; color: green;"></div>
+    <!-- Loading spinner displayed during API requests -->
+    <div id="loading-spinner" style="display: none; margin-top: 20px;">
+        <img
+            src="https://cdn.shopify.com/s/files/1/0666/1288/7725/files/Blue_Cat_1x-1.0s-200px-200px.gif?v=1730875071"
+            alt="Loading..."
+            style="width: 80px; height: 80px;"
+        />
+    </div>
+</div>
+
+<!-- Link the external JavaScript file -->
+<script src="{{ 'input_text_script.js' | asset_url }}"></script>
